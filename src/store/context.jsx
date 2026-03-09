@@ -14,7 +14,7 @@ export const ContextProvider=({children})=>{
   
 
 
-  const API_KEY='AIzaSyDElM3AtblD5yG5tIL_LUEbTjQzvVOVmGA'
+  const API_KEY = import.meta.env.VITE_YOUTUBE_API_KEY
   localStorage.setItem("watchHistory",JSON.stringify(watchHistory))
   
   const checkDecimalZeroAfterFix = (number) => {
