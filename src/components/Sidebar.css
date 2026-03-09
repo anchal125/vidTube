@@ -1,0 +1,117 @@
+.sidebar{
+  background: #fff;
+  height: 100vh;
+  position: fixed;
+  top:0;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow-y: scroll; 
+  overflow-x: hidden;
+  z-index:12;
+  width:min-content;
+  
+  
+  
+}
+
+.sidebar-logo{
+  padding:10px 0px;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 7px; 
+}
+
+.sidebar:hover::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2); 
+}
+
+
+.shortcut-links{
+  padding-top: 20px;
+  display:flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(183, 181, 181);
+  padding-bottom: 20px;
+}
+
+.shortcut-links img{
+  width:20px;
+}
+
+
+.side-link{
+  border-radius: 10px;
+  padding:10px 10px;
+  gap:20px;
+}
+
+.side-link img{
+  padding-bottom:2px ;
+}
+
+.side-link.active p{
+ color:red;
+ font-weight: 600;
+}
+
+.side-link.active img{
+  border-bottom: 2px solid red;
+ }
+ 
+
+.side-link.active,.side-link:hover{
+  background: #f2f0f0;
+}
+
+.side-link.active:hover{
+  background: rgb(221, 218, 218);
+}
+
+.side-link p{
+  font-size: 14px;
+}
+
+.subscribers{
+  padding-top:20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribers h3{
+  font-size: 15px;
+  color:#5a5a5a;
+  margin-bottom: 10px;
+}
+
+.subscribers img{
+  width:20px;
+  border-radius: 50%;
+}
+
+.sidebar .options-1{
+  display:flex;
+  flex-wrap:wrap;
+  font-size: 13px;
+  margin:20px 0px;
+  gap:5px 5px;
+  color:rgb(118, 116, 116);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sidebar .options-1 p{
+  cursor: pointer;
+}
+
+.sidebar .copyright{
+  font-size: 13px;
+  margin:20px 0px;
+  color:#9f9d9d;
+}
+
+@media (max-width:850px){
+  .sidebar{
+    padding:0px 10px;
+  }
+}

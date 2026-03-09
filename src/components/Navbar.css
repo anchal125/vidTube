@@ -1,0 +1,173 @@
+nav{
+  padding:10px 20px;
+  justify-content: space-between;
+  position:sticky;
+  top: 0;
+  background: #fff;
+  z-index: 10;
+  gap:18px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+} 
+
+.nav-left{
+  gap:20px;
+}
+
+.menu{
+  width:22px;
+}
+
+.logo{
+  width:120px ;
+}
+
+.nav-center{
+  padding:8px 12px;
+  border:1px solid rgb(183, 180, 180);
+  border-radius: 25px;
+  gap:15px;
+  position: relative;
+}
+
+.nav-center:focus-within {
+  border-color:rgb(37, 37, 227);
+}
+
+.nav-center input{
+  border: 0;
+  outline:0;
+  width:400px;
+}
+
+.nav-center img{
+  width:15px;
+}
+
+.pastsearch{
+  border-radius: 8px;
+  position: absolute;
+  top:100%;
+  left:0;
+  padding:10px;
+  width:100%; 
+  background: rgb(219, 216, 216);
+  max-height: 100px;
+  overflow: auto;
+}
+
+
+.pastsearch h4{
+  float:right;
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+
+.pastsearch p{
+  clear:right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 14.5px;
+}
+
+.nav-right{
+  gap:20px;
+}
+
+.nav-right img{
+  width:25px;
+}
+
+.nav-right .user{
+  border-radius: 50%;
+}
+
+
+.navbar .notification {
+  position:relative;
+}
+
+.navbar .notification .notification-no {
+  position:absolute;
+  background: red;
+  color:#fff;
+  font-size:12px;
+  border-radius: 20px;
+  padding:1px 3px;
+  bottom:50%;
+  left:50%;
+}
+
+@media (max-width:850px){
+
+  nav{
+    padding:10px 10px;
+    
+  }
+
+  .nav-center{
+    width:50%;
+  }
+  .nav-center input{
+    width:100%;
+  }
+
+  .logo{
+    width:110px ;
+  }
+
+  .nav-left,.nav-right{
+    gap:10px;
+  }
+  
+}
+
+@media (max-width:650px){
+
+  .menu{
+    width:18px;
+  }
+  
+  .logo{
+    width:90px ;
+  }
+
+  .nav-right {
+    display: none !important;
+  }
+
+  .nav-center{
+    flex:1;
+    padding:5px 12px;
+  }
+
+  .nav-center img{
+    width:13px;
+  }
+
+  .nav-center h4{
+    font-size: 14px;
+  }
+
+ }
+
+
+@media (max-width:450px){
+
+  
+
+  .nav-center{
+    padding:2px 12px;
+  }
+
+  .nav-center img{
+    width:10px;
+  }
+
+  .nav-left{
+    gap:12px;
+  }
+
+
+}
